@@ -13,13 +13,14 @@ import androidx.navigation.fragment.findNavController
 import tech.tucano.madlevel3example.databinding.ActivityMainBinding
 import tech.tucano.madlevel3example.databinding.FragmentAddReminderBinding
 
+
+const val REQ_REMINDER_KEY = "req_reminder"
+const val BUNDLE_REMINDER_KEY = "bundle_reminder"
+
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
  */
 class AddReminderFragment : Fragment() {
-    private val REQ_REMINDER_KEY = "req_reminder"
-    private val BUNDLE_REMINDER_KEY = "bundle_reminder"
-
     private var _binding: FragmentAddReminderBinding? = null
     private val binding get() = _binding!!
 
